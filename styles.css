@@ -1,0 +1,92 @@
+html, body, header, .wrapper, section {
+    height: 98%;
+}
+
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+  color:#474747;
+  font-weight:300;
+}
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
+
+.wrapper {
+  width:100%;
+  margin:0;
+}
+
+header {
+  width:30%;
+  float:left;
+}
+
+section {
+  width:70%;
+  float:right;
+}
+
+footer {
+  width:100%;
+  float:left;
+  position:fixed;
+  margin: 0;
+  bottom:0px;
+}
+
+@media print, screen and (max-width: 960px) {
+  
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+  
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+  
+  header {
+    padding-right:0px;
+  }
+  
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+  
+  header {
+    padding:0;
+  }
+  
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+  
+  header ul {
+    display:none;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+}
