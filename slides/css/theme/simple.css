@@ -6,11 +6,20 @@
  * This theme is Copyright (C) 2015 Dani Arribas-Bel, http://darribas.org - it is MIT licensed.
  */
 .reveal a:not(.image) {
+  color:#000000;
+  font-weight:bold;
+  text-decoration:none;
   line-height: 1.3em; }
 
 .reveal p, ul, li, ol, table, pre, dl {
   line-height: 1.5em;
   text-align: left; }
+
+.reveal b {
+  color:#000000;
+  font-weight:bold;
+  text-decoration:none;
+}
 
 /*********************************************
  * GLOBAL STYLES
